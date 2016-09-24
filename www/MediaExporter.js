@@ -14,7 +14,7 @@ cordova.define("cordova-plugin-MediaExporter.MediaExporter", function(require, e
                //    exec(success, error, "MediaExporter", "coolMethod", [arg0]);
                //};
                
-               function Device() {
+               function MediaExporter() {
                //this.available = false;
                this.title = null;
                this.id = null;
