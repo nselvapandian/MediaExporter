@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-MediaExporter" version="0.0.1">
     <name>MediaExporter</name>
     <js-module name="MediaExporter" src="www/MediaExporter.js">
-        <clobbers target="MediaExporter" />
+        <clobbers target="mediaexp" />
     </js-module>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
