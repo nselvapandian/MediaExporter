@@ -15,7 +15,9 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 
 @interface MediaExporter : CDVPlugin
-{}
+{
+ NSMutableArray *songLists;
+}
 
 - (void)getMediaInfo:(CDVInvokedUrlCommand*)command;
 
