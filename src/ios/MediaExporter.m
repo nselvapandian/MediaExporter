@@ -47,8 +47,10 @@
     
     songLists = [NSMutableArray array];
     
+    NSLog(@"SOngs query list %@",query.items):
+    
     for (int i = 0; i < query.items.count; i++) {
-        NSDictionary *song = [[NSDictionary alloc]initWithObjectsAndKeys:@"title",mediaItem.title,@"url",mediaItem.assetURL, nil];
+        NSDictionary *song = [[NSDictionary alloc]initWithObjectsAndKeys: mediaItem.title,@"title",mediaItem.assetURL,@"url", nil];
         [songLists addObject:song];
     }
     NSLog(@"");
