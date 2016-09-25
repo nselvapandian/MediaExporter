@@ -31,7 +31,9 @@
 
 - (void)getMediaInfo:(CDVInvokedUrlCommand*)command
 {
+    NSLog(@"Media Info method called");
     NSArray* mediaInformation = [self mediaInformation];
+    NSLog(@"SongsList %@",mediaInformation);
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:mediaInformation];
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
@@ -49,6 +51,7 @@
         NSDictionary *song = [[NSDictionary alloc]initWithObjectsAndKeys:@"title",mediaItem.title,@"url",mediaItem.assetURL, nil];
         [songLists addObject:song];
     }
+    NSLog(@"");
     return songLists;
 }
 
