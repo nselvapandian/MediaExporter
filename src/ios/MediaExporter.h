@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Cordova/CDV.h>
+#import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
+#import <Cordova/CDV.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <AVFoundation/AVFoundation.h>

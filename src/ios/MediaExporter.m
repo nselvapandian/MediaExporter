@@ -1,6 +1,7 @@
 /********* MediaExporter.m Cordova Plugin Implementation *******/
 
 #import <Cordova/CDV.h>
+#import "CDVFile.h"
 #import "MediaExporter.h"
 
 //@interface MediaExporter : CDVPlugin {
